@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121116;
+  background-size: cover;
+  background-position: center;
+}
+
+.sharebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sharebtn>div {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background: #009FFF;
+  background-size: 150%;
+  background-position: center;
+}
+
+.sharebtn .centerbtn {
+  width: 85px;
+  color: white;
+  font-size: 2.5em;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 1s cubic-bezier(0.47, 1.74, 0.41, 0.8);
+}
+
+.sharebtn .centerbtn>i {
+  transition: all 0.2s;
+}
+
+.sharebtn .centerbtn>.fa-close {
+  font-size: 0em;
+  opacity: 0;
+}
+
+.sharebtn .centerbtn.active .fa-close {
+  font-size: 1em;
+  opacity: 1;
+}
+
+.sharebtn .centerbtn.active .fa-share-alt {
+  font-size: 0em;
+  opacity: 0;
+}
+
+.sharebtn .centerbtn:active {
+  transform: scale(0.3);
+}
+
+.sharebtn .sidebtn {
+  width: 50px;
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.47, 1.74, 0.41, 0.8), transform 0.5s cubic-bezier(0.47, 1.74, 0.41, 0.8) calc(var(--i)* 0.07s);
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5em;
+  transform: none;
+  overflow: hidden;
+}
+
+.sharebtn .sidebtn:active {
+  width: 60px;
+}
+
+.sharebtn.active .sidebtn:nth-of-type(2) {
+  transform: translateY(-200%);
+}
+
+.sharebtn.active .sidebtn:nth-of-type(3) {
+  transform: translateX(200%);
+}
+
+.sharebtn.active .sidebtn:nth-of-type(4) {
+  transform: translateY(200%);
+}
+
+.sharebtn.active .sidebtn:nth-of-type(5) {
+  transform: translateX(-200%);
+}
+
+.sharebtn.active .sidebtn:nth-of-type(6) {
+  transform: translate(141%, -141%);
+}
+
+.sharebtn.active .sidebtn:nth-of-type(7) {
+  transform: translate(141%, 141%);
+}
+
+.sharebtn.active .sidebtn:nth-of-type(8) {
+  transform: translate(-141%, 141%);
+}
+
+.sharebtn.active .sidebtn:nth-of-type(9) {
+  transform: translate(-141%, -141%);
+}
