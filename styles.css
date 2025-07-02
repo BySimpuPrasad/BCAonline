@@ -1,0 +1,16 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styling */
+body {
+    background-color: #121212;
+    width:100%;
+}
+img{
+    width:100%;
+    margin: auto;
+}
