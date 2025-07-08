@@ -3,11 +3,12 @@ const stylo = `
   body{ 
   background: #111;
   color: white;
+  font-family: sans-serif;
   }
   
   h1{
     color: deepskyblue;
-    font-size: 20px;
+    font-size: 18px;
     width:100%;
     padding: 5px;
     border-bottom: 2px solid #222;
