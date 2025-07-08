@@ -2,7 +2,7 @@ const stylo = `
 
   body{ 
   background: #111;
-  color: white; 
+  color: white;
   }
   
   h1{
